@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  
+ 
+  <!-----------------Website   SEO Optimisation---------------->
+  
+  <meta name="description" content="Professional Electrical Installation, Wiring, Solar Installation Company">
+    <meta name="keywords" content="Godelectrics, GODELECTRICS, Electronics, umeme, Wiring, Electrical Companies, uganda,  uedcl nakasero, uedcl, Electrical, Electricians, Uganda Electrical, Uganda">
+    <meta name="author" content="godelectrics , umeme,uedcl ">
+    <meta name="robots" content=".ug, .com, go, follow">
+  
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<title></title>
+
+<style>
+:root {
+    --blue: #0b2c5f;
+    --orange: #ff7a00;
+    --light: #f4f6f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--light);
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav h2 {
+    color: var(--blue);
+}
+
+nav span {
+    color: var(--orang);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+/* HERO */
+.hero , header {
+    height: 90vh;
+    background: linear-gradient(rgba(11,44,95,0.85), rgba(11,44,95,0.85)),
+    url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZMylN5yyPazF5zF00eb2KbWR8AAtzRntUPCsgPA-7pmGJeRZFli0U85-f-FJU14S4REC9Mgu6l6dAAZ2geINrSkCvEPplPHdMOjP-f54NiPS7aARM83hFEqwU2lIpdFUpNgXgpXLZGX-3N6fuUqaHfDI4AMtQzRlBD-TPY_rkMR9cFFZ0Sg48ASaO4DQ/s1600/ChatGPT%20Image%20Apr%2025,%202026,%2003_08_00%20AM.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    color: var(--orange);
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: var(--orange);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SERVICES */
+.services {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.services h2 {
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: var(--orange);
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* FEATURES */
+.features {
+    background: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    margin: 10px;
+}
+
+/* CTA */
+.cta  {
+         background: linear-gradient(rgba(35, 185,240,  0.3), rgba(35, 185, 240, 0.3) ), url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKEV4m3hfsZ-dVV0mJzB6hjzIj50Ra1W3twg1grNLOX-sRXNOH1Z0dn14mFwDHlwBVTcm65Bxta9cXUYw7_BGxwVFhuT7mRoVRHq9KXDzEiLKObmJC6iLvGpu1bxlr39XJba_BSwsGJNRX6BeTg_WUVXLzEdsTVZdcwPdR2aNJs-yMwpjJKANbdCRkW54/s1600/safety.jpg");
+      background-size:cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+  .callus {
+    color::#0b2c5f
+  }
+  
+.cta h2 {
+    margin-bottom: 10px;
+}
+  
+  
+/* FLOATING CALL BUTTON */
+.call-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: var(--blue);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* AD BANNER */
+.ad {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--orange);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    animation: slide 1s ease;
+}
+
+@keyframes slide {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 2rem;
+  }}
+  .god{color:#0b2c5f 
+    /* deep blue */}
+ 
+  
+  /*ElectronicsInstallation
+Smart Home Systems
+CCTV & Security
+Solar Power Systems
+Networking & Cabling
+Control Panels
+Lighting Solutions
+Generator Systems
+Fault Diagnosis
+Maintenance Services             */
+  
+  
+
+  
+  
+  
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20b958;
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Optional Tooltip */
+    .whatsapp-float::after {
+      content: "Chat on WhatsApp";
+      position: absolute;
+      right: 70px;
+      background-color: #333;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover::after {
+      opacity: 1;
+      right: 75px;
+    }
+
+    /* Pulse Animation */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    .whatsapp-float {
+      animation: pulse 2s infinite;
+    }
+
+  
+  
+  
+  
+</style>
+</head>
+
+<body>
+  
+  
+
+
+<nav>
+    <h1 class="god"><span>GODELECTRICS UG</span></h1>
+    <div>
+        <a href="#">Home</a>
+      <a href="#">Contact</a>
+        <a href="https://godelectrics.blogspot.com/2026/05/godelctrics.html">Services</a>
+      <a href="https://share.google/bmlXgf9oSwFj8j9wV">Electronics Services</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+      
+      <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBm_e2HKT7ZvDXrsodM49-NmPzlggzi77Z_BYnXnY-72a91fts3Mo5LUOxOm-oQAIR_uobaftRtcHeu7ArS9xbuhMOv2atnrgOFH6a1rb-gZ4ZEDbMIsdKcQER0ffjspr19N9QwtavbuZbZkBWKKcY6jTnqOlcWSKNZ8pRudp4-1DYl3Y7JtykWGRTok0/s1187/TM%20GOD%20ELECTRICS%20LOGO%20PNG.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="200" data-original-height="890" data-original-width="1187" 
+      
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBm_e2HKT7ZvDXrsodM49-NmPzlggzi77Z_BYnXnY-72a91fts3Mo5LUOxOm-oQAIR_uobaftRtcHeu7ArS9xbuhMOv2atnrgOFH6a1rb-gZ4ZEDbMIsdKcQER0ffjspr19N9QwtavbuZbZkBWKKcY6jTnqOlcWSKNZ8pRudp4-1DYl3Y7JtykWGRTok0/s200/TM%20GOD%20ELECTRICS%20LOGO%20PNG.png"/></a></div>
+      
+      
+        <h1>Complete </h1> <h1> Electrical Services</h1>
+        <p>Powering Homes, Businesses &amp; Industries</p>
+        <button class="btn"> <a href="http://wa.me//256764945784" target="_blank">Click to Whatsapp </a></button>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">⚡ Qualified Experts</div>
+    <div class="feature">🛠 Reliable Work</div>
+    <div class="feature">⏱ On-Time Service</div>
+    <div class="feature">💰 Affordable</div>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+      
+       <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3Ye51JqraRSUlLZ1AI2zPFkFj6WQsZi6NTfjA6hzG-cs8aLFo1cjCkjZcw7N1CWJIoOjOI3U4ZU_GH9-2u3zurk02x2JnJnvEmXCyd4bjonW9LezKFAaso5WX1hkbjt7nUtanZnaP9XY7ZXUH5CNdYnCw8hORKnBn2PEC8pgOOwdATpjG2JQhDahhll0/s1600/AutoCAD%20electricall.jpg"/>
+            <h3>Electrical Plans</h3>
+            <p>Electrical Designs  &amp; Plans.</p>
+        </div>
+      
+      
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZMylN5yyPazF5zF00eb2KbWR8AAtzRntUPCsgPA-7pmGJeRZFli0U85-f-FJU14S4REC9Mgu6l6dAAZ2geINrSkCvEPplPHdMOjP-f54NiPS7aARM83hFEqwU2lIpdFUpNgXgpXLZGX-3N6fuUqaHfDI4AMtQzRlBD-TPY_rkMR9cFFZ0Sg48ASaO4DQ/s1600/ChatGPT%20Image%20Apr%2025,%202026,%2003_08_00%20AM.png"/>
+            <h3>Installation</h3>
+          
+            <p>Complete electrical installation services.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyeOaam6iOy4wGpwV_IGNFeHgpXMSPX2goDJQaUGUyqM_DRYzXg_KG8SIZsg_-aijd1K-pSK_K3H0K63vxhHaAcHt66zMYI5GC250QgjkOArJ_Isbl0goKKxiCP7_1Ilm9vO9EbBH02XkpmAw2R9X9h3XB5gaLXDTsMr_ehrNJc4hlj9hu7Tw36XKK7u8/s1600/image-9.jpg" />
+            <h3>Wiring</h3>
+            <p>Safe and efficient wiring &amp; rewiring.</p>
+        </div>
+      
+      
+
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnxvmWOSUblNXqcpbMF-6cuVPyyApnngAu2yM_kB-JwScYVFLS22h5SFQiBv8G3N8MnRfvOxZgntLtYWSux1k4epDJ1CxnL6l8cs4r1TgY3qr5t0WmhqglbPr-qBZ3AO69-l_tGU0mFTi-yrYhGfGpBY9toACzyjI2dHjolTzqm3nf8rSERKic4UBQel8/s1600/ideas-for-using-hallway-light-fixtures-in-your-home-116499_750x.jpg"/>
+          <h3>Lighting</h3>
+            <p>Modern indoor &amp; outdoor lighting.</p>
+        </div>
+
+      
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ILyraF5a-93gRncXFCadvBnlxlqqVC6FX79GecO1JxM3VbQP-5LT9xAdutSppKt7j5hXcXhMMRaY3-lCWacSxD1Z9WGluJ2LMfLoKIJCFwPGK2QtPI8kgGI1NAcfOLv42Xn46TlQZMSU291S4cZ-EUIIhYi2Ohgzby6tYlejs20tTTzDAG2CRh-dysk/s1600/Solar.png"/>
+            <h3>Solar Power Systems &amp; Power Backups</h3>
+            <p>Domestic , Commercial &amp; Large Scale Solar Installation &amp; Wiring .</p>
+          
+        </div>
+      
+      
+        <div class="card">
+          
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpZQn7Twv4wHiJ4R9eB-kS8HFRq0e_Wz_ynfq0JIwdAldfIngpDuYH3-by8zAqR0Cw5p3id6kRiueGl1E5jTpc45YS2sTaCWQMREjxr5dSnUgMbnSEXTeFwN6L_lKoo-pucmgJDHdttbqWfuQLOCInbhUU-DfeL7O2gl6RrNyA1sONbSGYnBGlIoZq-vI/s1600/automation%20switching.jpg"/>
+          
+          
+            <h3>Electrical Automation Switching</h3>
+            <p>Automatic Power Switching ie, Between Solar Energy, Generator &amp; Power Grid (Normal Power)</p>
+          
+        </div>
+      
+      
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQM5og4AMbx6f2Y6QCTvHpx7eIoxsK-_0QKiqDKSKQlK0fuJKnoTajuW5uOmhnq_ZFktgkizRemffOwa7t9T_t2soy_JEiz_fVouQtuT3h8Aotbtjo8lLQrKcOn7WocY-hpiodMp0rT6xvwE8EnLxiN78ERBLtgYD6CJv65NXto4I11EkeV98Ul4xgUvE/s1600/1000315274.webp"/>
+                 
+
+            <h3>Maintenance</h3>
+            <p>Routine checks &amp; system repairs.</p>
+          
+        </div>
+      
+      
+      
+      
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPUfJSp4n7TIaw-5DgNwbg6Co0Hac4HXnvK7E1LfBvu1BHoWQdsAvjcd1k6KsjsH-LaD4IXcWbAh2W4vWv1BG0-jbFG6SkcssGisU8zBOCncqtM3zOH0WcuFLpti2cHdpZzRbpWq-zNvR2qFdwBW6su_W6c4AskGWgXG1G8fBgqCVP4XITCjZv-RBG2ME/s1600/1000315325.jpg"/>
+            <h3>Fault Finding &amp; Inspection </h3>
+          <p> Rapid tracing and rectification of short circuits, earth faults, and nuisance tripping.</p>
+        </div>
+      
+      
+      
+      
+      
+      
+      <!----------Cards------->
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Electrical Safety is Our Priority</h2>
+    <p class="callus">Call us today for reliable service</p>
+    <button class="btn">+256 764 945 784</button>
+</section>
+
+<div class="call-btn , fa fa-phone" > +256 764945784  <br/>
+  </div>
+
+<div class="ad" id="ad">
+    ⚡ 24/7 Emergency Electrical Services Available!
+</div>
+
+  
+  
+  
+    
+    <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/256764945784" 
+     class="whatsapp-float" 
+     target="_blank" style=" color:white">
+    <i class="fab fa-whatsapp" ></i>
+  </a>
+  
+  
+  
+  
+<footer>
+    <p>© 2026 GODELECTRICS⚡ | Powering Today, Lighting For Generations </p>
+</footer>
+
+<script>
+// hide ad after 7 sec
+setTimeout(()=>{
+    document.getElementById("ad").style.display="none";
+},7000);
+</script>
+
+</body>
+</html>
